@@ -4,6 +4,7 @@ define filebeat::prospector (
   $exclude_files         = [],
   $encoding              = 'plain',
   $input_type            = 'log',
+  $codec                 = undef,
   $fields                = {},
   $fields_under_root     = false,
   $ignore_older          = undef,
